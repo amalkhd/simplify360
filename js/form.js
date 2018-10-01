@@ -6,4 +6,8 @@ $(document).ready(function () {
         $("#myContent > div").not(name).removeClass("active");
         $(name).addClass("active");
     })
+
+    $(".toggle").click(function (ev) {
+        $(this).find("> span").toggleClass("active");
+    })
 });
