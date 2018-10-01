@@ -2,11 +2,25 @@
 
 .page-nav{
     display: inline-block;
+    &.mobile{
+        display: flex;
+        justify-content: flex-end;
+        .cont{
+            margin: 0;
+            position: relative;
+            left: 7px;
+            margin-top: 10px;
+        }
+    }
     .cont{
         font-size: 14px;
         display: flex;
         color:#757575;
+        align-items: center;
         margin-right: 10px;
+         @media(max-width:991px){
+            font-size: 12px;
+        }
         span{
             &:nth-child(2){
                 margin: 0 5px;
@@ -36,6 +50,11 @@
     position: relative;
     .btn{
         font-size: 14px;
+     
+         @media(max-width:991px){
+            font-size: 12px;
+            
+        }
         .poppins;
         background-color: white;
         display: flex;
@@ -47,6 +66,13 @@ i{
     position: relative;
     left: 6px;
 }
+          @media(max-width:767px){
+            padding: 5px;
+                max-width: 32px;
+            i{
+                left: initial;
+            }
+        }
 &:focus{
 box-shadow: 0 5px 15px #EEEEEE;
    
@@ -54,6 +80,7 @@ box-shadow: 0 5px 15px #EEEEEE;
 
 }
 .dropdown-content{
+    min-width: 100px;
     z-index: 10;
     display: none;
     .poppins;
@@ -120,14 +147,28 @@ box-shadow: 0 5px 15px #EEEEEE;
         i{
         position: relative;
         left: -5px;
+        font-size: 20px;
+            bottom: 1px;
         }
         .poppins;
+         @media(max-width:991px){
+            font-size: 12px;
+        }
+            @media(max-width:767px){
+            padding: 5px;
+            i{
+                left: initial;
+            }
+        }
   }
 }
 
 .btn-icon{
     .btn-div;
     .btn{
+        @media(max-width:767px){
+            padding: 5px;
+        }
         padding: 6px;
         &.active{
             color: @blue;
@@ -141,7 +182,11 @@ box-shadow: 0 5px 15px #EEEEEE;
 
 
 .card-item{
+    margin-top: 20px;
+    @media(min-width:768px){
     margin-top: 40px;
+
+    }
     background-color: white;
     box-shadow: 0 5px 20px #eee;
     border-radius: 6px;
@@ -255,3 +300,15 @@ display: none;
 
 }
 
+
+.hidden-xs{
+    @media(max-width:767px){
+        display: none !important;
+    }
+}
+
+.visible-xs{
+    @media(max-width:767px){
+        display: inherit;
+    }
+}
