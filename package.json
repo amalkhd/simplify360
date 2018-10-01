@@ -1,0 +1,15 @@
+{
+  "name": "ui-template",
+  "version": "1.0.0",
+  "description": "UI template base",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amal krishna <amalkhd@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1"
+  }
+}
