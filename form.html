@@ -13,28 +13,88 @@
     <link href="less/page.css" rel="stylesheet">
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="pre-loader">
-        <img src="" alt="">
-    </div>
+    <div class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-card">
+                        <ul class="f-tabs" id="myTab">
+                            <li>
+                                <a href="#form1" class="active">Form 1</a>
+                            </li>
+                            <li>
+                                <a href="#form2">Form 2</a>
+                            </li>
+                        </ul>
+                        <div class="f-content" id="myContent">
+                            <div id="form1" class="active f-cont">
+                                <div class="row m-0">
+                                    <div class="col-8">
+                                        <p class="poppins">
+                                            <span class="f-head req">Select type</span>
+                                        </p>
+                                        <div class="custom-radio">
+                                            <span class="checked">
+                                                <i class="material-icons">
+                                                    radio_button_checked
+                                                </i>
+                                                Type 1
+                                            </span>
+                                        </div>
+                                        <div class="custom-radio">
+                                            <span>
+                                                <i class="material-icons">
+                                                    radio_button_unchecked
+                                                </i>
+                                                Type 1
+                                            </span>
+                                        </div>
 
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <button class="btn btn-default">
-                    save
-                </button>
+                                    </div>
+                                    <div class="col-6">
+                                        <form>
+                                            <div class="form-group">
+                                                <label class="poppins mt-20">
+                                                    <span class="req">Name</span>
+                                                </label>
+                                                <input type="text" class="form-control" placeholder="Enter name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="poppins mt-20">
+                                                    <span class="req">Email</span>
+                                                </label>
+                                                <input type="text" class="form-control" placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="poppins mt-20">
+                                                    <span class="req">Description</span>
+                                                </label>
+                                                <textarea type="text" class="form-control" placeholder="Enter meassage" rows="6"></textarea>
+                                            </div>
+                                            <div class="toggle">
+                                                <p class="f-head poppins">Select </p>
+                                                <span>
+                                                    <span></span>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="form2" class="f-cont">
+                                form2
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
-
-
-
 
     <footer>
         <div class="container-fluid">
@@ -44,6 +104,6 @@
 </body>
 <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/form.js"></script>
 
 </html>

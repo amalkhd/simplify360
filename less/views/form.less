@@ -1,0 +1,129 @@
+// main: ../page.less
+
+.form-card{
+    margin-top: 80px;
+    background-color: white;
+    box-shadow: 0 5px 15px #EEEEEE;
+    border-radius: 6px;
+    overflow: hidden;
+    ul.f-tabs{
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #eee;
+        li{
+            list-style: none;
+            display: inline-block;            
+            a{
+                position: relative;
+                .roboto;
+                .medium;
+                color: @light-grey;
+                text-decoration: none;
+                display: block;
+                padding: 10px 40px;
+                border-bottom: 4px solid white;
+                transition: all 0.2s ease;
+                &:after{
+                    transition: all 0.2s ease;
+                    opacity: 0;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -4px;
+                    height: 4px;
+                    background-color: @blue;
+                    width: 0;                    
+                }
+                &.active{
+                    color: @blue;
+                       &:after{
+                    opacity: 1;
+                    width: 100%;                    
+                } 
+                }
+            }
+        }
+    }
+    .f-content{
+        padding: 20px;
+        .f-cont{
+            color: @light-grey;          
+            display: none;
+            &.active{
+            display: block;
+            }
+        }
+    }
+}
+
+
+.custom-radio{
+    display: inline-block;
+    span{
+        cursor: pointer;
+        .roboto;
+        height: 40px;
+        padding: 0 20px;
+        border:1px solid #eee;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+            font-size: 14px;        
+        i{
+            margin-right: 5px;
+            font-size: 20px;
+        }
+        &.checked{
+            background-color: fade(@blue, 90%);
+            color: white;
+        }
+    }
+}
+
+
+.f-head{
+color: @dark-grey;
+font-size: 16px;
+font-weight: 500;
+}
+
+.req{
+position: relative;    
+&.req{
+&:after{
+content: "*";
+color: red;
+    position: absolute;
+    right: -15px;
+    top: 19%;
+}
+}
+}
+
+
+form{
+    label{
+        font-size: 16px;
+    font-weight: 500;
+        color: @dark-grey;
+    }
+}
+
+.toggle{
+    >span{
+            display: flex;
+            width: 40px;
+            height: 15px;
+            background-color: #bdbdbd;
+            border-radius: 10px;
+            align-items: center;
+        span{
+        height: 20px;
+        width: 20px;
+        border-radius: 50px;
+        background-color: white;   
+            box-shadow: 0 0px 8px #BDBDBD
+        }
+    }
+}
